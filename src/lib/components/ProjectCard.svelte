@@ -9,12 +9,14 @@
 	export let moreInfoURL: null | string = null;
 
 	export let tags : string [] = []
+	import { base } from '$app/paths';
+
 </script>
 
 <div class="card w-96 bg-base-100 shadow-xl image-full group">
 	<figure>
 		<img
-			src="/ProjectThumbnails/{image.name}"
+			src="/{base}/ProjectThumbnails/{image.name}"
 			alt={image.alt}
 			class="group-hover:blur transition-all duration-500"
 		/>
@@ -28,7 +30,7 @@
 			class="card-actions justify-end md:opacity-0 group-hover:opacity-100 transition-all duration-500"
 		>
 			{#if moreInfoURL != null}
-				<a class="btn btn-primary" href={moreInfoURL} target="_blank">Read More</a>
+				<a class="btn btn-primary" href={base + '/' + moreInfoURL} target="_blank">Read More</a>
 			{/if}
 		</div>
 		<div class="card-actions group-hover:opacity-0 transition-all duration-500">
