@@ -6,6 +6,10 @@
 
 </script>
 
+<svelte:head>
+    <title>Leah's Portfolio - {title}</title>
+</svelte:head>
+
 <!-- <img src={`${dev ? '' : 'Uni-Portfolio/'}${src}`} {alt} />
  -->
 <div class="rounded-lg w-full h-64 bg-cover flex items-center justify-center" style="background-image: linear-gradient(

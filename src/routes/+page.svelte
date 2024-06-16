@@ -27,6 +27,10 @@
 
 </script>
 
+<svelte:head>
+    <title>Leah's Portfolio</title>
+</svelte:head>
+
 <!-- <h1>Leah</h1>
 <p>uhh</p>
 test -->
