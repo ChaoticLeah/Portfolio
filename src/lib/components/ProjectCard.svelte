@@ -16,7 +16,7 @@
 <div class="card w-96 bg-base-100 shadow-xl image-full group">
 	<figure>
 		<img
-			src="/{base}/ProjectThumbnails/{image.name}"
+			src="{base}/ProjectThumbnails/{image.name}"
 			alt={image.alt}
 			class="group-hover:blur transition-all duration-500"
 		/>
