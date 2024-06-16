@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Image from '$lib/components/Image.svelte';
 	import Title from '$lib/components/Title.svelte';
 </script>
 
@@ -6,7 +7,7 @@
 
 <article class="prose lg:prose-xl lg:mx-40 m-8 p-4 rounded-xl !max-w-full bg-base-300">
 	<!-- `	<h1>The Orbetorian</h1>
-	<img
+	<Image
 		src="/ProjectThumbnails/TheOrbetorian.png"
 		alt="A sceenshot of The Orbetorian in an underground cave in a glow tree biome"
 	/>` -->
@@ -47,22 +48,13 @@
 	</ul>
 
 	<h2>Screenshots</h2>
-	<img
+	<Image
 		src="/ProjectThumbnails/TheDevilsDungeon/gamejam.gif"
 		alt="A gif of a prototype version of the game with just shapes"
 	/>
-	<p>A gif of a prototype version of the game with just shapes</p>
-	<img
+	<Image
 		src="/ProjectThumbnails/TheDevilsDungeon/yOcI99G2bu8AAAAASUVORK5CYII.png"
 		alt="Later on with some textures here is an in progress screenshot of me making a level editor to make levels easily"
 	/>
-	<p>Later on with some textures here is an in progress screenshot of me making a level editor to make levels easily</p>
 </article>
 
-<style>
-	/* article {
-  } */
-	article > img {
-		border-radius: 10px;
-	}
-</style>

@@ -1,10 +1,11 @@
 <script lang="ts">
+	import Image from '$lib/components/Image.svelte';
 	import Title from '$lib/components/Title.svelte';
 </script>
 
 <div class="w-screen !h-1/2 bg-red-500"></div>
 
-<!-- <div class="hero min-h-screen" style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+<!-- <div class="hero min-h-screen" style="background-image: url(https://Image.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
     <div class="hero-overlay bg-opacity-60"></div>
     <div class="hero-content text-center text-neutral-content">
       <div class="max-w-md">
@@ -16,7 +17,7 @@
   </div> -->
 <article class="prose lg:prose-xl lg:mx-40 m-8 p-4 rounded-xl !max-w-full bg-base-300">
 	<!-- `	<h1>The Orbetorian</h1>
-	<img
+	<Image
 		src="/ProjectThumbnails/TheOrbetorian.png"
 		alt="A sceenshot of The Orbetorian in an underground cave in a glow tree biome"
 	/>` -->
@@ -66,14 +67,6 @@
 	</p>
 
   <h2>Screenshots</h2>
-  <img src="/ProjectThumbnails/TheOrbetorian/Screen_Shot_2020-10-09_at_8.03.35_PM.png" alt="A 2d pixel art game where the player is in the middle standing in a house structure"/>
-  <img src="/ProjectThumbnails/TheOrbetorian/Screen_Shot_2020-12-25_at_6.33.11_PM.png" alt="A 2d pixel art game where the player on the side of a mountain next to an open cave"/>
+  <Image src="/ProjectThumbnails/TheOrbetorian/Screen_Shot_2020-10-09_at_8.03.35_PM.png" alt="A 2d pixel art game where the player is in the middle standing in a house structure"/>
+  <Image src="/ProjectThumbnails/TheOrbetorian/Screen_Shot_2020-12-25_at_6.33.11_PM.png" alt="A 2d pixel art game where the player on the side of a mountain next to an open cave"/>
 </article>
-
-<style>
-	/* article {
-  } */
-	article > img {
-		border-radius: 10px;
-	}
-</style>

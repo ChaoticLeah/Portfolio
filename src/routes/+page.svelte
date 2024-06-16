@@ -23,6 +23,8 @@
 	//     }
 	// 	console.log(test);
 	// })();
+
+	const dev = process.argv.includes('dev');
 </script>
 
 <!-- <h1>Leah</h1>
@@ -31,7 +33,7 @@ test -->
 <!-- <div class="hero min-h-screen bg-gradient-to-r from-indigo-950"> -->
 <div
 	class="hero min-h-screen"
-	style="background-image: url(/ProjectThumbnails/DesolateDominion.png);"
+	style="background-image: url({dev ? '' : '/Uni-Portfolio'}/ProjectThumbnails/DesolateDominion.png);"
 >
 	<div class="hero-overlay bg-opacity-60"></div>
 	<div class="hero-content text-center text-neutral-content">
