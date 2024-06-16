@@ -1,10 +1,10 @@
 <script lang="ts">
 	export let src = '';
 	export let alt = '';
-	const dev = process.argv.includes('dev');
+	import { base } from '$app/paths';
 </script>
 
-<img src={`${dev ? '' : '/Uni-Portfolio/'}${src}`} {alt} />
+<img src={`${base}${src}`} {alt} />
 <p>{alt}</p>
 
 <style>
