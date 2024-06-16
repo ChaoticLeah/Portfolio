@@ -53,4 +53,11 @@ test -->
 <div id = "projects">
 	<Projects></Projects>
 </div>
+
+<div class="w-full flex justify-center p-10">
+	<div class="join">
+		<a class="btn join-item" href="https://github.com/ChaoticLeah">Github</a>
+		<a class="btn join-item" href="https://kevinwho.itch.io/">Itch.io</a>
+	  </div>
+</div>
 <!-- <article class="prose prose-slate">{{ test }}</article> -->
