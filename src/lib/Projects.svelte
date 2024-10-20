@@ -8,7 +8,7 @@
 </script>
 
 <div class="flex justify-center items-center">
-	<div class="w-10/12 flex flex-wrap gap-2">
+	<div class="w-10/12 flex justify-center flex-wrap gap-2">
 		<ProjectCard
 			title="The Orbetorian"
 			desc={`A sandbox game where everything is procedurally generated. Its like terraria and no mans sky combined. I worked with a friend on this and handled a lot of the UI, some items, rendering, and other things.`}
