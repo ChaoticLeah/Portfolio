@@ -1,7 +1,11 @@
+import typography from "@tailwindcss/typography";
+import daisyui from "daisyui";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
+  
     extend: {
       animation: {
         wiggle: 'wiggle 10s ease-in-out infinite',
@@ -30,8 +34,8 @@ export default {
     themes: ["forest", "emerald"],
   },
   plugins: [
-    require('@tailwindcss/typography'),
-    require('daisyui'),
+    typography,
+    daisyui
   ],
 }
 

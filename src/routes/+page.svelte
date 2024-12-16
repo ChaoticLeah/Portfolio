@@ -24,14 +24,21 @@
 	//     }
 	// 	console.log(test);
 	// })();
+	let showConfetti = false;
+
 	import { base } from '$app/paths';
 	import Skill from '$lib/components/Skill.svelte';
+	import Confetti from 'svelte-confetti';
 </script>
 
 <svelte:head>
 	<title>Leah's Portfolio</title>
 </svelte:head>
-
+{#if showConfetti}
+	<div style="position: absolute; top: -50px; left: 0; height: 100vh; width: 100vw; display: flex; justify-content: center; overflow: hidden; pointer-events: none;">
+		<Confetti x={[-5, 5]} y={[0, 0.1]} delay={[500, 2000]}  infinite duration=5000 amount=200 fallDistance="100vh" />
+	</div>
+{/if}
 <!-- <h1>Leah</h1>
 <p>uhh</p>
 test -->
@@ -59,6 +66,22 @@ test -->
 						role="button">My Projects
 					</a>
 				</div>
+				
+				<br />
+
+				<!-- <ToggleConfetti toggleOnce relative={false}>
+					<button slot="label">Fullscreen</button>
+	
+					<div style="position: fixed; top: -50px; left: 0; height: 100vh; width: 100vw; display: flex; justify-content: center; overflow: hidden; pointer-events: none;">
+						<Confetti x={[-5, 5]} y={[0, 0.1]} delay={[500, 2000]}  infinite duration=5000 amount=200 fallDistance="100vh" />
+					</div>
+				</ToggleConfetti> -->
+
+				<a href="mailto:work@leahdevs.xyz" title="Contact me!"
+				class="absolute bottom-0 right-0 m-3 btn btn-primary animate-bounce"
+				on:click={()=>{showConfetti = true}}
+				>Contact me
+			</a>
 		</div>
 	</div>
 	<!-- Bottom left corner controls (Theme controller doesnt work because a lot of stuff is hard coded) -->
@@ -107,7 +130,7 @@ test -->
 
 <!-- Skills -->
 <div class="flex justify-center items-center p-4">
-	<div class="group flex flex-col md:flex-row gap-12 p-10 rounded-lg bg-secondary-content">
+	<div class="flex flex-col md:flex-row gap-12 p-10 rounded-lg bg-secondary-content">
 		<!--  bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent -->
 		<h2 class="text-5xl font-bold text-secondary flex justify-center"><Icon class="opacity-0 group-hover:opacity-100 transition-all duration-700" icon="iconamoon:arrow-right-2-fill"></Icon>Skills</h2>
 		<div class="flex flex-col gap-2">
@@ -173,7 +196,7 @@ test -->
 	<div class="join">
 		<a class="btn join-item" href="https://github.com/ChaoticLeah">Github</a>
 		<a class="btn join-item" href="https://kevinwho.itch.io/">Itch.io</a>
-		<!-- <a class="btn join-item" href="mailto:work@leahdevs.xyz">Email Me</a> -->
+		<a class="btn join-item" href="mailto:work@leahdevs.xyz">Email Me</a>
 	</div>
 </div>
 <!-- <article class="prose prose-slate">{{ test }}</article> -->
