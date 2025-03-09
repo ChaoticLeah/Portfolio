@@ -84,9 +84,10 @@
 		></ProjectCard>
 
 		<ProjectCard
-			title="Sharkey & Cutiekey"
-			desc={`Sharkey and Cutiekey and 2 fediverse projects I work on with a small team of other people. They are both opensource social media sites.
-My role in this was frontend and backend coder.`}
+			title="Forkey & Sharkey"
+			desc={`Sharkey and Forkey and 2 fediverse projects I work on with a small team of other people. They are both opensource social media sites.
+My role in this was working on both the frontend and backend. I implemented various accessability and moderation features among other things.`}
+			moreInfoURL="/projects/Forkey"
 			image={{ name: 'Sharkey.png', alt: 'The cutiekey and sharkey interface' }}
 		></ProjectCard>
 

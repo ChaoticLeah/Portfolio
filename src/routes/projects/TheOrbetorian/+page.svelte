@@ -15,7 +15,7 @@
       </div>
     </div>
   </div> -->
-<article class="prose lg:prose-xl lg:mx-40 m-8 p-4 rounded-xl !max-w-full bg-base-300">
+<article class="prose lg:prose-xl lg:mx-96 m-8 p-4 rounded-xl !max-w-full bg-base-300">
 	<!-- `	<h1>The Orbetorian</h1>
 	<Image
 		src="/ProjectThumbnails/TheOrbetorian.png"

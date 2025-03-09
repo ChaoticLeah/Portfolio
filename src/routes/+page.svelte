@@ -195,7 +195,7 @@ test -->
 <div class="w-full flex justify-center p-10">
 	<div class="join">
 		<a class="btn join-item" href="https://github.com/ChaoticLeah">Github</a>
-		<a class="btn join-item" href="https://kevinwho.itch.io/">Itch.io</a>
+		<a class="btn join-item" href="https://chaotickitsune.itch.io">Itch.io</a>
 		<a class="btn join-item" href="mailto:work@leahdevs.xyz">Email Me</a>
 	</div>
 </div>
